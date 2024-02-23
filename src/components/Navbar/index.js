@@ -36,7 +36,7 @@ const Navbar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               paddingLeft: 1,
@@ -61,7 +61,7 @@ const Navbar = () => {
             <Typography
               variant="h6"
               component="a"
-              href="#app-bar-with-responsive-menu"
+              href="/"
               sx={{
                 mr: 2,
                 display: { xs: "flex" },

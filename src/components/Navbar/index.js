@@ -1,63 +1,151 @@
-import React from 'react'
-import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileNavLogo, MobileLink } from './NavbarStyledComponent'
-import { DiCssdeck } from 'react-icons/di';
-import { FaBars } from 'react-icons/fa';
-import { Bio } from '../../data/constants';
-import { Close, CloseRounded } from '@mui/icons-material';
-import { useTheme } from 'styled-components';
-import { AppBar, Typography } from '@mui/material';
-import SensorOccupiedIcon from '@mui/icons-material/SensorOccupied';
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import Typography from "@mui/material/Typography";
+import Menu from "@mui/material/Menu";
+import MenuIcon from "@mui/icons-material/Menu";
+import Container from "@mui/material/Container";
+import Avatar from "@mui/material/Avatar";
+import Button from "@mui/material/Button";
+import MenuItem from "@mui/material/MenuItem";
+import { Link } from "@mui/material";
+
+const pages = ["about", "skills", "experience", "projects", "education"];
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
-  const theme = useTheme()
-  return (
-    <AppBar color='secondary' position='fixed'>
-      <NavbarContainer>
-        <NavLogo to='/'>
-          <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20;', cursor: 'pointer' }}>
-            <SensorOccupiedIcon size="4rem" /> <Typography sx={{pl: 1, fontWeight: 'bold' }}>Portfolio</Typography>
-          </a>
-        </NavLogo>
-        <MobileIcon>
-          <FaBars onClick={() => {
-            setIsOpen(!isOpen)
-          }} />
-        </MobileIcon>
-        <NavItems style={{alignContent: 'right'}}>
-          <NavLink href="#about" style={{ display: "flex", color: "white", marginBottom: '20;', cursor: 'pointer' }}>About</NavLink>
-          <NavLink href='#skills' style={{ display: "flex", color: "white", marginBottom: '20;', cursor: 'pointer' }}>Skills</NavLink>
-          <NavLink href='#experience' style={{ display: "flex", color: "white", marginBottom: '20;', cursor: 'pointer' }}>Experience</NavLink>
-          <NavLink href='#projects' style={{ display: "flex", color: "white", marginBottom: '20;', cursor: 'pointer' }}>Projects</NavLink>
-          <NavLink href='#education' style={{ display: "flex", color: "white", marginBottom: '20;', cursor: 'pointer' }}>Education</NavLink>
-        </NavItems>
-        {/* <ButtonContainer>
-          <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
-        </ButtonContainer> */}
-        {
-          isOpen &&
-          <MobileMenu variant='contained' isOpen={isOpen}>
-            <MobileLink href="#about" onClick={() => {
-              setIsOpen(!isOpen)
-            }}>About</MobileLink>
-            <MobileLink href='#skills' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Skills</MobileLink>
-            <MobileLink href='#experience' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Experience</MobileLink>
-            <MobileLink href='#projects' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Projects</MobileLink>
-            <MobileLink href='#education' onClick={() => {
-              setIsOpen(!isOpen)
-            }}>Education</MobileLink>
-            {/* <GitHubButton style={{padding: '10px 16px',background: `${theme.primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</GitHubButton> */}
-          </MobileMenu>
-        }
-      </NavbarContainer>
-    </AppBar>
-  )
-}
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-export default Navbar
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
+  return (
+    <AppBar component={"nav"} color="secondary" position="fixed">
+      <Container maxWidth="xl">
+        <Toolbar disableGutters>
+          <Avatar alt="Remy Sharp" src="profileImage.jpg" />
+          {"  "}
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="#app-bar-with-responsive-menu"
+            sx={{
+              mr: 2,
+              paddingLeft: 1,
+              display: { xs: "none", md: "flex" },
+              fontFamily: "monospace",
+              fontWeight: 700,
+              letterSpacing: ".3rem",
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          >
+            Portfolio
+          </Typography>
+
+          <Box
+            sx={{
+              flexGrow: 1,
+              justifyContent: "right",
+              display: { xs: "flex", md: "none" },
+            }}
+          >
+            <Typography
+              variant="h6"
+              component="a"
+              href="#app-bar-with-responsive-menu"
+              sx={{
+                mr: 2,
+                display: { xs: "flex" },
+                flexGrow: 1,
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+                padding: "12px",
+              }}
+            >
+              Portfolio
+            </Typography>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              {pages.map((page) => (
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Typography
+                    component={Button}
+                    href={"#" + page}
+                    textAlign="center"
+                    color={"black"}
+                  >
+                    {page}
+                  </Typography>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
+          <Box
+            sx={{
+              flexGrow: 1,
+              justifyContent: "right",
+              display: { xs: "none", md: "flex" },
+            }}
+          >
+            {pages.map((page) => (
+              <Button
+                key={page}
+                component={Link}
+                href={"#" + page}
+                onClick={handleCloseNavMenu}
+                sx={{
+                  my: 2,
+                  color: "white",
+                  display: "block",
+                  alignContent: "right",
+                }}
+              >
+                {page}
+              </Button>
+            ))}
+          </Box>
+        </Toolbar>
+      </Container>
+    </AppBar>
+  );
+};
+
+export default Navbar;

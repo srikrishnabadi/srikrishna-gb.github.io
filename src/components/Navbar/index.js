@@ -30,8 +30,6 @@ const Navbar = () => {
     <AppBar component={"nav"} color="secondary" position="fixed">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Avatar alt="Remy Sharp" src="profileImage.jpg" />
-          {"  "}
           <Typography
             variant="h6"
             noWrap

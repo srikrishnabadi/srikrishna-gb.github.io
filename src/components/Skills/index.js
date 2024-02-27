@@ -19,6 +19,7 @@ align-items: center;
 flex-direction: column;
 width: 100%;
 max-width: 1100px;
+padding: 40px 0px 0px 0px;
 gap: 12px;
 @media (max-width: 960px) {
     flex-direction: column;
@@ -121,7 +122,7 @@ const SkillImage = styled.img`
 
 const Skills = () => {
   return (
-    <Container id="skills">
+    <Container style={{paddingTop: '40px', position: 'relative'}} id="skills">
       <Wrapper>
         <Title>Skills</Title>
         <Desc>Here are some of my skills on which I have been working on for the past 2 years.

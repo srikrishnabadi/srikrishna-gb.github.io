@@ -22,7 +22,7 @@ import { Button, Link } from "@mui/material";
 
 const HeroSection = () => {
   return (
-    <div id="about">
+    <div style={{paddingTop: '40px'}} id="about">
       <HeroContainer>
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
@@ -41,7 +41,7 @@ const HeroSection = () => {
                 />
               </Span>
             </TextLoop>
-            <SubTitle>{Bio.description}</SubTitle>
+            <SubTitle style={{color: 'black'}}>{Bio.description}</SubTitle>
             <Button
               component={Link}
               variant="contained"

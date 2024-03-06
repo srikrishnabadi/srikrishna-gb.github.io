@@ -157,7 +157,7 @@ const ExperienceCard = ({ experience }) => {
             </Top>
             <Description>
                 {experience?.desc &&
-                    <Span>{experience?.desc}</Span>
+                    <div dangerouslySetInnerHTML={{ __html: experience?.desc }}/>
 
                 }
                 {experience?.skills &&

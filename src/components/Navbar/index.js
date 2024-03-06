@@ -109,6 +109,9 @@ const Navbar = () => {
                     href={"#" + page}
                     textAlign="center"
                     color={"black"}
+                    sx={{
+                      textTransform: "capitalize",
+                    }}
                   >
                     {page}
                   </Typography>
@@ -134,6 +137,7 @@ const Navbar = () => {
                   color: "white",
                   display: "block",
                   alignContent: "right",
+                  textTransform: "capitalize",
                 }}
               >
                 {page}

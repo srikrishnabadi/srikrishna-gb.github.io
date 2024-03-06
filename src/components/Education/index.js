@@ -31,7 +31,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     width: 100%;
     max-width: 1350px;
-    padding: 40px 0px 0px 0px;
+    padding: 80px 0px 0px 0px;
     gap: 12px;
     @media (max-width: 960px) {
         flex-direction: column;
@@ -82,9 +82,6 @@ const index = () => {
         <Container id="education">
             <Wrapper>
                 <Title>Education</Title>
-                <Desc>
-                    My education has been a journey of self-discovery and growth. My educational details are as follows.
-                </Desc>
                 <TimelineSection>
                     <Timeline>
                         {education.map((education,index) => (

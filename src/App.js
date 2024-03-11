@@ -45,9 +45,9 @@ function App() {
             <Education />
           </Wrapper>
           <Footer />
-          {openModal.state &&
+          {/* {openModal.state &&
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          }
+          } */}
         </Body>
       </Router>
     </ThemeProvider>

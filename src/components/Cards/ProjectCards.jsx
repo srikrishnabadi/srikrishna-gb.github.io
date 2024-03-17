@@ -16,24 +16,15 @@ const Button = styled.button`
 `;
 const Card = styled.div`
   background-color: ${({ theme }) => theme.card};
-  cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   padding: 26px 20px;
   display: flex;
   flex-direction: column;
-  margin: 0px 20px 0px 20px;
+  margin: 0px 30px 0px 30px;
   gap: 14px;
   transition: all 0.5s ease-in-out;
-  &:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
-    filter: brightness(1.1);
-  }
-  &:hover ${Button} {
-    display: block;
-  }
 `;
 
 const Image = styled.img`
@@ -122,7 +113,9 @@ const ProjectCards = ({ project, setOpenModal }) => {
       <Details>
         <Title>{project.title}</Title>
         <Date>{project.date}</Date>
-        <Description>{project.description}</Description>
+        <Description>
+          <div dangerouslySetInnerHTML={{ __html: project.description }} />
+        </Description>
       </Details>
       <Tags>
         {project.tags?.map((tag, index) => (

@@ -19,10 +19,6 @@ const Projects = ({ openModal, setOpenModal }) => {
     <Container id="projects">
       <Wrapper>
         <Title>Projects</Title>
-        <Desc>
-          I have worked on a wide range of projects. From web apps to android
-          apps. Here are some of my projects.
-        </Desc>
         <ToggleButtonGroup>
           {toggle === "all" ? (
             <ToggleButton active value="all" onClick={() => setToggle("all")}>
@@ -51,18 +47,18 @@ const Projects = ({ openModal, setOpenModal }) => {
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "android app" ? (
+          {toggle === "Collage Projects" ? (
             <ToggleButton
               active
-              value="android app"
-              onClick={() => setToggle("android app")}
+              value="Collage Projects"
+              onClick={() => setToggle("Collage Projects")}
             >
               Collage Projects
             </ToggleButton>
           ) : (
             <ToggleButton
-              value="android app"
-              onClick={() => setToggle("android app")}
+              value="Collage Projects"
+              onClick={() => setToggle("Collage Projects")}
             >
               Collage Projects
             </ToggleButton>

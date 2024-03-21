@@ -4,10 +4,10 @@ export const Bio = {
   description:
     "and I am adaptable person with a love of learning and is committed to do excellent work with an optimistic attitude and a growth mindset. I am prepared to make a significant contribution and achieve the targets on time.",
   resume:
-    "https://drive.google.com/file/d/1txFKZD3LNIXMc329jD9c995AU8LItOXK/view?usp=drive_link",
-  linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-  insta: "https://www.instagram.com/rishav_chanda/",
-  facebook: "https://www.facebook.com/rishav.chanda.165/",
+    "https://drive.google.com/file/d/1IphXvlbgrq3anj43AUgpesW3yZQWO8KG/view?usp=sharing",
+  linkedin: "https://www.linkedin.com/in/sri-krishna-g-b-93021319b",
+  insta: "https://www.instagram.com/srikrishna_badi/",
+  facebook: "https://www.facebook.com/sri.krishnabadi/",
 };
 
 export const skills = [

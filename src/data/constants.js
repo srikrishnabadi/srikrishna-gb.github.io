@@ -4,10 +4,10 @@ export const Bio = {
   description:
     "and I am adaptable person with a love of learning and is committed to do excellent work with an optimistic attitude and a growth mindset. I am prepared to make a significant contribution and achieve the targets on time.",
   resume:
-    "https://drive.google.com/file/d/1txFKZD3LNIXMc329jD9c995AU8LItOXK/view?usp=drive_link",
-  linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-  insta: "https://www.instagram.com/rishav_chanda/",
-  facebook: "https://www.facebook.com/rishav.chanda.165/",
+    "https://drive.google.com/file/d/1IphXvlbgrq3anj43AUgpesW3yZQWO8KG/view?usp=sharing",
+  linkedin: "https://www.linkedin.com/in/sri-krishna-g-b-93021319b",
+  insta: "https://www.instagram.com/srikrishna_badi/",
+  facebook: "https://www.facebook.com/sri.krishnabadi/",
 };
 
 export const skills = [
@@ -214,26 +214,38 @@ export const projects = [
     tags: ["JAVA", "PostgreSQL", "Spring Boot", "Junit", "Mockito", "REST API"],
     category: "Currect Projects",
   },
-  
+
   {
     id: 2,
     title: "NIE HUB",
     date: "April 2022 - July 2022",
     description:
       "• This is the mobile application which acts like a information hub about the collage activities that might be something like Event announcement, Sports conduction, Exam timetable and Exam result annoucements.</br >• If any student gets any doubt or concerns on any annoucement that is made he/she can put comments and those comments can be addressed by any other person who has access to the application and share there thoughts.",
-    tags: ["JAVA", "PostgreSQL", "Spring Boot", "REST API", "Flutter", "Android Application"],
+    tags: [
+      "JAVA",
+      "PostgreSQL",
+      "Spring Boot",
+      "REST API",
+      "Flutter",
+      "Android Application",
+    ],
     category: "Collage Projects",
   },
-  
+
   {
     id: 3,
     title: "Learning Management System(LMS)",
     date: "Nov 2021 - Feb 2022",
     description:
       "• This project basically act like the google classroom with some upgrades like 1. Providing the dashboard where you can view the pending works, 2. Providing annoucements or sending SMS if some work is unseen, 3. Chat window is provided where sudents can discuss on some topic directly with their teacher and 4. Teacher can conduct the quiz etc.</br >• We provided one calender in the dashboard where the students can directly see the due dates to upload the assignments.",
-    tags: ["React Js", "MySQL", "Node Js", "REST API", "CSS Styling", "Twilio API"],
+    tags: [
+      "React Js",
+      "MySQL",
+      "Node Js",
+      "REST API",
+      "CSS Styling",
+      "Twilio API",
+    ],
     category: "Collage Projects",
   },
 ];
-
-

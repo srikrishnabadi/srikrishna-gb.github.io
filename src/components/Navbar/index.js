@@ -12,7 +12,14 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "@mui/material";
 
-const pages = ["about", "skills", "experience", "projects", "education", "contact"];
+const pages = [
+  "about",
+  "skills",
+  "experience",
+  "projects",
+  "education",
+  "contact",
+];
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

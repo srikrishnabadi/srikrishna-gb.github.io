@@ -41,7 +41,7 @@ const Navbar = () => {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href="/srikrishna-gb.github.io"
             sx={{
               mr: 2,
               paddingLeft: 1,

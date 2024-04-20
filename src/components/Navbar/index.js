@@ -40,8 +40,6 @@ const Navbar = () => {
           <Typography
             variant="h6"
             noWrap
-            component="a"
-            href="/srikrishna-gb.github.io"
             sx={{
               mr: 2,
               paddingLeft: 1,
@@ -65,8 +63,6 @@ const Navbar = () => {
           >
             <Typography
               variant="h6"
-              component="a"
-              href="/"
               sx={{
                 mr: 2,
                 display: { xs: "flex" },

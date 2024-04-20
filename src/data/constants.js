@@ -158,7 +158,7 @@ export const experiences = [
   },
 ];
 
-export const education = [
+export const educationList = [
   {
     id: 0,
     img: "https://img.jagranjosh.com/images/2022/May/3152022/NIEMysuru.jpg",

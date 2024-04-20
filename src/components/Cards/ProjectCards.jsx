@@ -46,7 +46,7 @@ const Tags = styled.div`
 
 const Tag = styled.span`
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 600;
   color: ${({ theme }) => theme.primary};
   background-color: ${({ theme }) => theme.primary + 15};
   padding: 2px 8px;
@@ -63,7 +63,6 @@ const Details = styled.div`
 const Title = styled.div`
   font-size: 20px;
   font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
   overflow: hidden;
   display: -webkit-box;
   max-width: 100%;
@@ -77,7 +76,7 @@ const Date = styled.div`
   font-size: 12px;
   margin-left: 2px;
   font-weight: 400;
-  color: ${({ theme }) => theme.text_secondary + 80};
+  color: ${({ theme }) => theme.text_secondary + 99};
   @media only screen and (max-width: 768px) {
     font-size: 10px;
   }

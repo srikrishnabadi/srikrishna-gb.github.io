@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/srikrishna-gb.github.io/static/css/main.bf538fe7.css",
-    "main.js": "/srikrishna-gb.github.io/static/js/main.6ce79b08.js",
+    "main.js": "/srikrishna-gb.github.io/static/js/main.06104a65.js",
     "static/media/profileImage.jpg": "/srikrishna-gb.github.io/static/media/profileImage.626e319e1f6f3e8519db.jpg",
     "index.html": "/srikrishna-gb.github.io/index.html",
     "main.bf538fe7.css.map": "/srikrishna-gb.github.io/static/css/main.bf538fe7.css.map",
-    "main.6ce79b08.js.map": "/srikrishna-gb.github.io/static/js/main.6ce79b08.js.map"
+    "main.06104a65.js.map": "/srikrishna-gb.github.io/static/js/main.06104a65.js.map"
   },
   "entrypoints": [
     "static/css/main.bf538fe7.css",
-    "static/js/main.6ce79b08.js"
+    "static/js/main.06104a65.js"
   ]
 }

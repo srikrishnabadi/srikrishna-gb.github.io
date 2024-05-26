@@ -4,7 +4,7 @@ export const Bio = {
   description:
     "and I am adaptable person with a love of learning and is committed to do excellent work with an optimistic attitude and a growth mindset. I am prepared to make a significant contribution and achieve the targets on time.",
   resume:
-    "https://drive.google.com/file/d/1IphXvlbgrq3anj43AUgpesW3yZQWO8KG/view?usp=sharing",
+    "https://drive.google.com/file/d/1Iwu7Pwe6DApEn9Eu-tiIOW5EMFsU0ttZ/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/sri-krishna-g-b-93021319b",
   insta: "https://www.instagram.com/srikrishna_badi/",
   facebook: "https://www.facebook.com/sri.krishnabadi/",

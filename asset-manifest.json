@@ -1,14 +1,18 @@
 {
   "files": {
     "main.css": "/srikrishna-gb.github.io/static/css/main.bf538fe7.css",
-    "main.js": "/srikrishna-gb.github.io/static/js/main.06104a65.js",
+    "main.js": "/srikrishna-gb.github.io/static/js/main.666f7801.js",
     "static/media/profileImage.jpg": "/srikrishna-gb.github.io/static/media/profileImage.626e319e1f6f3e8519db.jpg",
+    "static/media/linkedin-svgrepo-com.svg": "/srikrishna-gb.github.io/static/media/linkedin-svgrepo-com.903f67c362e3a1addd3ad30693ac5df4.svg",
+    "static/media/github-svgrepo-com.svg": "/srikrishna-gb.github.io/static/media/github-svgrepo-com.8d1bc524d64f25bee143d25b34c557ac.svg",
+    "static/media/codingninjas-svgrepo-com.svg": "/srikrishna-gb.github.io/static/media/codingninjas-svgrepo-com.5e2e03493aaf82708ea409798c1fe6c7.svg",
+    "static/media/leetcode-svgrepo-com.svg": "/srikrishna-gb.github.io/static/media/leetcode-svgrepo-com.aa4ae682164d452ac10fdc2d4740e601.svg",
     "index.html": "/srikrishna-gb.github.io/index.html",
     "main.bf538fe7.css.map": "/srikrishna-gb.github.io/static/css/main.bf538fe7.css.map",
-    "main.06104a65.js.map": "/srikrishna-gb.github.io/static/js/main.06104a65.js.map"
+    "main.666f7801.js.map": "/srikrishna-gb.github.io/static/js/main.666f7801.js.map"
   },
   "entrypoints": [
     "static/css/main.bf538fe7.css",
-    "static/js/main.06104a65.js"
+    "static/js/main.666f7801.js"
   ]
 }

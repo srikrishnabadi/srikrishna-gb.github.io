@@ -1,3 +1,5 @@
+import { GitHub } from "@mui/icons-material";
+
 export const Bio = {
   name: "Sri Krishna G B",
   roles: ["Full Stack Developer", "Android Developer", "Programmer"],
@@ -8,6 +10,9 @@ export const Bio = {
   linkedin: "https://www.linkedin.com/in/sri-krishna-g-b-93021319b",
   insta: "https://www.instagram.com/srikrishna_badi/",
   facebook: "https://www.facebook.com/sri.krishnabadi/",
+  leetcode: "https://leetcode.com/u/user1634n/",
+  codingNinja: "https://www.naukri.com/code360/profile/e1b612b8-6cc3-40be-ba3a-ba564e0537dc",
+  GitHub: "https://github.com/srikrishnabadi"
 };
 
 export const skills = [

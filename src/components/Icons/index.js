@@ -4,7 +4,7 @@ import codingNinjasImage from "./codingninjas-svgrepo-com.svg";
 import linkedinImage from "./linkedin-svgrepo-com.svg";
 import githubImage from "./github-svgrepo-com.svg";
 
-export function LoadProfileIcons() {
+export function LoadProfileIcons() { 
   return (
     <div style={{ display: "flex", gap: "1.5rem" }}>
       <style>
